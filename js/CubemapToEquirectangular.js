@@ -86,7 +86,7 @@ function CubemapToEquirectangular( renderer, provideCubeCamera ) {
 	this.cubeCamera = null;
 	this.attachedCamera = null;
 
-	this.setSize( 4096*2, 2048*2 );
+	this.setSize( 4096, 2048 );
 
 	var gl = this.renderer.getContext();
 	this.cubeMapSize = gl.getParameter( gl.MAX_CUBE_MAP_TEXTURE_SIZE )
